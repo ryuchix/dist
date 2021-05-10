@@ -1,7 +1,7 @@
 <?php echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
 <?php header("Content-type: text/xml;charset=utf-8"); ?>
 <?php 
-    $json = file_get_contents('http://api.ragnarokmobile.net/api/sitemap/posts');
+    $json = file_get_contents('https://app.ragnarokmobile.net/api/sitemap/posts');
     $results = json_decode($json, true);
     $url = 'https://ragnarokmobile.net/guide/';
 ?>
